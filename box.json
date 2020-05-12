@@ -1,0 +1,5 @@
+{
+    "base-path": ".",
+    "main": "./src/index.php",
+    "output": "./bin/sample"
+}

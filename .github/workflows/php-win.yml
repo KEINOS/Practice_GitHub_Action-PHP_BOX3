@@ -1,0 +1,33 @@
+name: PHP over Windows
+on: [push]
+jobs:
+  build:
+    strategy:
+      matrix:
+        operating-system: ["windows-latest", "macos-latest"]
+        php-versions: ["7.2", "7.3", 7.4']
+
+    runs-on: ${{ matrix.operating-system }}
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          extensions: mbstring, xdebug
+          ini-values: post_max_size=256M, log_errors=1
+
+      - name: Install Dependencies
+        run: composer install
+
+      - name: Compile/Archive to Phar file. See composer.json
+        run: composer compile
+
+      - name: Test with runtime
+        run: php ./bin/sample
+
+      - name: Test with shebang
+        run: ./bin/sample

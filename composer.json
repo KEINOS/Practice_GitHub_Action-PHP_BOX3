@@ -1,0 +1,34 @@
+{
+    "name": "keinos/hello-world",
+    "description": "Sample project to create phar file with Box3 for Windows.",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "ext-phar": "*",
+        "ext-mbstring": "*",
+        "keinos/hello-world-tpl": "^1.0"
+    },
+    "require-dev": {
+        "humbug/box": "^3.7"
+    },
+    "bin": [
+        "bin/sample"
+    ],
+    "autoload": {
+        "psr-4": {
+            "KEINOS\\Sample\\": "src/classes"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.0"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "compile": "php ./vendor/bin/box compile"
+    }
+}
