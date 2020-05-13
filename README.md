@@ -1,3 +1,4 @@
+[![](https://img.shields.io/badge/PHP-%5E7.2-blue)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/composer.json#L6 "Supported version")
 [![](https://img.shields.io/github/workflow/status/KEINOS/Practice_GitHub_Action-Win_PHP/PHP%20over%20Windows)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions "View workflow status on GitHub")
 [![](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/workflows/Test%20on%20Win/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions?query=workflow%3A%22Test%20on%20Win%22 "View workflow status on GitHub")
 [![](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/workflows/Test%20on%20Mac/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions?query=workflow%3A%22Test%20on%20Mac%22 "View workflow status on GitHub")
@@ -5,9 +6,9 @@
 
 # GitHub Action Sample for PHP7 and Box3 for Win/Mac/Linux
 
-This repo is a sample usage of [GitHub Actions](https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions), to **run PHP/composer/[Box3](https://github.com/humbug/box) on Windows over virtual env. as a CI**.
+This repo is a sample to run PHP/composer/[Box3](https://github.com/humbug/box) on [GitHub Actions](https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions) as a CI.
 
-Aimed to ensure a little, the function-ability of the compiled (Phar archived) file on Windows, macOS and Ubuntu.
+Aimed to **test the compiled (Phar archived) file function-ability on Windows, macOS and Ubuntu**.
 
 ## Workflow
 
@@ -20,8 +21,8 @@ Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](htt
 2. Checkouts the repo.
 3. Sets up the following PHP.
     - v7.2, v7.3 and v7.4
-4. Installs dependencies of the sample script with composer.
-5. Compiles the sample script to a phar file with [Box3](https://github.com/humbug/box).
+4. Installs dependencies of the sample script via composer.
+5. Compiles the sample script to a Phar file with [Box3](https://github.com/humbug/box).
     - Compile command: `composer compile` (See: Notes)
     - Output file: `./bin/sample`
 6. Runs the compiled phar file using runtime.
@@ -38,7 +39,7 @@ Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](htt
   - [./src](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/src)
 - Archive Settings (Configuration file for Box3)
   - [box.json](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/box.json)
-- Composer custom user command to compile/archive to Phar
+- Composer custom user command to compile/archive the script to Phar
 
     ```json
     "scripts": {

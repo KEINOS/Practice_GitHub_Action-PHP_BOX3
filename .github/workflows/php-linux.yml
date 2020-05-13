@@ -1,4 +1,4 @@
-name: Test on Win
+name: Test on Linux
 on: [push]
 jobs:
   build:
