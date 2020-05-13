@@ -1,10 +1,10 @@
-name: Test on Linux
+name: Test on Mac
 on: [push]
 jobs:
   build:
     strategy:
       matrix:
-        operating-system: ["windows-latest"]
+        operating-system: ["macos-latest"]
         php-versions: ["7.2", "7.3", 7.4']
 
     runs-on: ${{ matrix.operating-system }}
