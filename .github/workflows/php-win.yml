@@ -21,13 +21,4 @@ jobs:
           ini-values: post_max_size=256M, log_errors=1
 
       - name: Install Dependencies
-        run: composer install
-
-      - name: Compile/Archive to Phar file. See composer.json
-        run: composer compile
-
-      - name: Test with runtime
-        run: php ./bin/sample
-
-      - name: Test with shebang
-        run: ./bin/sample
+        run: composer diagnose
