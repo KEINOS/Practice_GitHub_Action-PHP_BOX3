@@ -1,8 +1,8 @@
-[![](https://img.shields.io/badge/PHP-%5E7.2-blue)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/composer.json#L6 "Supported version")
-[![](https://img.shields.io/github/workflow/status/KEINOS/Practice_GitHub_Action-Win_PHP/PHP%20over%20Windows)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions "View workflow status on GitHub")
-[![](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/workflows/Test%20on%20Win/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions?query=workflow%3A%22Test%20on%20Win%22 "View workflow status on GitHub")
-[![](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/workflows/Test%20on%20Mac/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions?query=workflow%3A%22Test%20on%20Mac%22 "View workflow status on GitHub")
-[![](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/workflows/Test%20on%20Linux/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/actions?query=workflow%3A%22Test%20on%20Linux%22 "View workflow status on GitHub")
+[![](https://img.shields.io/badge/PHP-%5E7.2-blue)](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/composer.json#L6 "Supported version")
+[![](https://img.shields.io/github/workflow/status/KEINOS/Practice_GitHub_Action-PHP_BOX3/PHP%20over%20Windows)](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/actions "View workflow status on GitHub")
+[![](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/workflows/Test%20on%20Win/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/actions?query=workflow%3A%22Test%20on%20Win%22 "View workflow status on GitHub")
+[![](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/workflows/Test%20on%20Mac/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/actions?query=workflow%3A%22Test%20on%20Mac%22 "View workflow status on GitHub")
+[![](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/workflows/Test%20on%20Linux/badge.svg)](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/actions?query=workflow%3A%22Test%20on%20Linux%22 "View workflow status on GitHub")
 
 # GitHub Action Sample for PHP7 and Box3 for Win/Mac/Linux
 
@@ -12,7 +12,7 @@ Aimed to **test the compiled (Phar archived) file function-ability on Windows, m
 
 ## Workflow
 
-Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/.github/workflows/php-win.yml) which does the following:
+Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/.github/workflows/php-win.yml) which does the following:
 
 1. Boots the following virtual environment as a runner.
     - `windows-latest` as Windows Server 2019
@@ -33,12 +33,12 @@ Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](htt
 ## Notes
 
 - The workflow
-  - [./.github/workflows/php-win.yml](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/.github/workflows/php-win.yml)
+  - [./.github/workflows/php-win.yml](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/.github/workflows/php-win.yml)
   - Basically **this is the only file you needed** to add/change to let GitHub Actions work.
 - Sample script to be Phar archived via Box3
-  - [./src](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/src)
+  - [./src](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/src)
 - Archive Settings (Configuration file for Box3)
-  - [box.json](https://github.com/KEINOS/Practice_GitHub_Action-Win_PHP/blob/master/box.json)
+  - [box.json](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/box.json)
 - Composer custom user command to compile/archive the script to Phar
 
     ```json

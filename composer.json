@@ -11,9 +11,6 @@
     "require-dev": {
         "humbug/box": "^3.7"
     },
-    "bin": [
-        "bin/sample"
-    ],
     "autoload": {
         "psr-4": {
             "KEINOS\\Sample\\": "src/classes"
