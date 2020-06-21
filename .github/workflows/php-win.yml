@@ -31,4 +31,6 @@ jobs:
         run: composer compile
 
       - name: Run sample
-        run: php ./bin/sample
+        run: |
+          dir ./bin
+          php ./bin/sample
