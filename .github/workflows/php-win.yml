@@ -21,9 +21,14 @@ jobs:
           extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite
           ini-values: post_max_size=256M, log_errors=1
 
+      - name: Update composer
+        run: composer self-update
+
       - name: Install Composer dependencies
-        run: |
-          composer self-update
-          composer install --no-progress --prefer-dist --optimize-autoloader
-          composer compile
-          php ./bin/sample
+        run: composer install
+
+      - name: Compile Phar
+        run: composer compile
+
+      - name: Run sample
+        run: php ./bin/sample
