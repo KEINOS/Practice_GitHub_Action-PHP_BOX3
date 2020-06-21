@@ -3,7 +3,7 @@
     "description": "Sample project to create phar file with Box3 for Windows.",
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "ext-phar": "*",
         "ext-mbstring": "*",
         "keinos/hello-world-tpl": "^1.0"
