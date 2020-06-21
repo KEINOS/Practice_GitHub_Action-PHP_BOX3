@@ -28,7 +28,9 @@ jobs:
         run: composer install
 
       - name: Compile Phar
-        run: composer compile
+        run: |
+          mkdir bin
+          composer compile
 
       - name: Run sample
         run: |
