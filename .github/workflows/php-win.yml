@@ -20,5 +20,9 @@ jobs:
           extensions: mbstring
           ini-values: post_max_size=256M, log_errors=1
 
+      - name: Setup composer
+        uses: nanasess/composer-installer-action@master
+        run: composer install
+
       - name: Install Dependencies
         run: composer diagnose
