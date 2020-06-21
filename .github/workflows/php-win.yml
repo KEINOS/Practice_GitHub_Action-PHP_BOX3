@@ -30,7 +30,7 @@ jobs:
       - name: Compile Phar
         run: |
           mkdir bin
-          composer compile
+          php ./vendor/bin/box compile
 
       - name: Run sample
         run: |
