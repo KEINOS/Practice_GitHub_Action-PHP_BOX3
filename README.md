@@ -12,7 +12,7 @@ Aimed to **test the compiled (Phar archived) file function-ability on Windows, m
 
 ## Workflow
 
-Once a commit is `push`ed or `Pull Request`ed GitHub will run [the workflow](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/.github/workflows/php-win.yml) which does the following:
+Once a commit is pushed or pull requested GitHub will run [the workflow](https://github.com/KEINOS/Practice_GitHub_Action-PHP_BOX3/blob/master/.github/workflows/php-win.yml) which does the following:
 
 1. Boots the following virtual environment as a runner.
     - `windows-latest` as Windows Server 2019
