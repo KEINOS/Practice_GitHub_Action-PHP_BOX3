@@ -35,4 +35,4 @@ jobs:
       - name: Run sample
         run: |
           dir .
-          php ./bin/sample
+          php D:\a\Practice_GitHub_Action-PHP_BOX3\Practice_GitHub_Action-PHP_BOX3\bin\sample
