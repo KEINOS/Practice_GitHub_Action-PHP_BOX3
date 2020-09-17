@@ -27,10 +27,13 @@ jobs:
       - name: Install Composer dependencies
         run: composer install
 
+      - name: Smoke Test of composer
+        run: composer --version
+
       - name: Compile Phar
         run: |
           mkdir bin
-          php ./vendor/bin/box compile
+          php ./vendor/bin/box.bat compile
 
       - name: Run sample
         run: |
